@@ -1,0 +1,342 @@
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/inter-400.woff2") format("woff2");
+  font-display: swap;
+  }
+
+@font-face {
+   font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    src: url("/fonts/inter-700.woff2") format("woff2");
+    font-display: swap;
+    }
+
+@font-face {
+      font-family: "Inter";
+       font-style: normal;
+       font-weight: 900;
+       src: url("/fonts/inter-900.woff2") format("woff2");
+       font-display: swap;
+       }
+html {
+height: 100%;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: "Inter", normal;
+  background-color: #FEAFC3;
+}
+
+.page-header {
+  color: #ffffff;
+  background-color: #FEAFC3;
+}
+
+.navigation-link {
+  font-family: "Inter";
+  font-style: normal;
+  line-height: 16px;
+  font-weight: 400;
+  text-align: left;
+  color: #2D3440;
+  background-color: #FEAFC3;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.navigation-item {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.main-index {
+  color: #2D3440;
+  background-color: #FEAFC3;
+}
+
+.promo {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  color: #2D3440;
+  font-size: 36px;
+  line-height: 46px;
+}
+
+.main-index p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  color: #2D3440;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.promo-bth {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  color: #2D3440;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+}
+
+.stock-text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  color: #2D3440;
+  font-size: 32px;
+  line-height: 46px;
+  text-align: center;
+}
+
+.stock-title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  color: #2D3440;
+  font-size: 24px;
+  line-height: 30px;
+  text-decoration: none;
+}
+
+.stock-description {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  color: #2D3440;
+  font-size: 16px;
+  line-height: 22px;
+  text-decoration: none;
+}
+
+.assortiment-title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  color: #2D3440;
+  font-size: 32px;
+  line-height: 46px;
+  text-align: center;
+}
+.assortiment-item {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+
+.assortiment-item p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  color: #565C66;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+
+}
+
+.advantages-item {
+  list-style-type: none;
+  text-decoration: none;
+
+}
+.assortiment-product {
+  text-align: center;
+}
+
+.assortiment-name {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  color: #2D3440;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.advantages-text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  color: #2D3440;
+  font-size: 32px;
+  line-height: 46px;
+  text-align: center;
+}
+
+.advantages-description {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  color: #565C66;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.blog-title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  color: #565C66;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.blog-link {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  color: #2D3440;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: left;
+  text-decoration: none;
+}
+
+.delivery-form-email {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  color: #2D3440;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: left;
+}
+
+.button {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  color: #FCFCFC;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  background-color: #FF2F64;
+  border-style: solid;
+  border-width: 4px;
+  border-color: rgba(45, 52, 64, 0.1,);
+  border-radius: 26px;
+}
+
+.delivery-title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  color: #2D3440;
+  font-size: 32px;
+  line-height: 46px;
+}
+
+.delivery-text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  color: #565C66;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.delivery-form p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  color: #2D3440;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.footer-contacts p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  color: #565C66;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.about-text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  color: #2D3440;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.footer-contacts-address-phone {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  color: #2D3440;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.footer-navigation {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  color: #2D3440;
+  font-size: 14px;
+  line-height: 20px;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.footer-navigation li {
+  list-style-type: none;
+}
+
+.provider-link {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  color: #2D3440;
+  font-size: 14px;
+  line-height: 20px;
+  text-decoration: none;
+}
+.about-text p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  color: #2D3440;
+  font-size: 12px;
+  line-height: 16px;
+  text-decoration: none;
+}
+
+.inner-header-title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+}
+
+.container-asortiment {
+  background-color: #FCFCFC;
+}
+.button-action {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  color: #FCFCFC;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  background-color: ##FCFCFC66;
+  border-style: solid;
+  border-width: 4px;
+  border-color: rgba(45, 52, 64, 0.1,);
+  border-radius: 26px;
+}
