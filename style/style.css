@@ -21,6 +21,7 @@
        src: url("/fonts/inter-900.woff2") format("woff2");
        font-display: swap;
        }
+
 html {
 height: 100%;
 }
@@ -28,14 +29,32 @@ height: 100%;
 body {
   margin: 0;
   display: flex;
+  min-height: 100%;
   flex-direction: column;
   font-family: "Inter", normal;
   background-color: #FEAFC3;
 }
 
-.page-header {
+.header {
   color: #ffffff;
   background-color: #FEAFC3;
+}
+
+.navigation {
+  display: flex;
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.navigation-list {
+  width: 685px;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-user {
+  width: 471px;
+  margin-left: auto;
 }
 
 .navigation-link {
@@ -55,10 +74,45 @@ body {
   text-decoration: none;
 }
 
-.main-index {
+.main {
   color: #2D3440;
   background-color: #FEAFC3;
 }
+
+.main-container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.main-text {
+  width: 470px;
+}
+
+.icecream {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  display: flex;
+}
+
+.icecream-link {
+  font-family: "Inter";
+  font-style: normal;
+  line-height: 16px;
+  font-weight: 400;
+  text-align: left;
+  color: #2D3440;
+  background-color: #FEAFC3;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.gallery {
+  width: 306px;
+}
+
+
 
 .promo {
   font-family: "Inter";
@@ -67,7 +121,9 @@ body {
   color: #2D3440;
   font-size: 36px;
   line-height: 46px;
+
 }
+
 
 .main-index p {
   font-family: "Inter";
@@ -118,6 +174,12 @@ body {
   text-decoration: none;
 }
 
+.advantages-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
 .assortiment-title {
   font-family: "Inter";
   font-style: normal;
@@ -143,12 +205,79 @@ body {
   text-align: center;
 
 }
+.advantages {
+  width: 1142px;
+  margin: 0 auto;
+}
 
+.advantages-container {
+  width: 1043px;
+}
 .advantages-item {
+  text-align: left;
   list-style-type: none;
   text-decoration: none;
 
 }
+
+.advantages-list {
+  margin: 0;
+  padding: 0;
+}
+
+.blog {
+  width: 570px;
+  background-image: url(/img/Новости-2.jpg);
+}
+.index-columns {
+  display: flex;
+  flex-direction: column;
+  padding: 0 40;
+}
+
+.big-stock {
+  width: 1170px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.stock-malinka {
+  width: 570px;
+  border-radius: 16px;
+  background-color:#FF7799;
+  background-image: url(/img/малина\ в\ рожке.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.stock-mar {
+  width: 570px;
+  border-radius: 16px;
+  margin-left: 30px;
+  background-color:#FF7799;
+  background-image: url(/img/маршмелоу-рожок.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.assortiment {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.all {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.container-asortiment {
+  background-color: #FCFCFC;
+  width: 270px;
+  margin-bottom: 40px;
+}
+
+
 .assortiment-product {
   text-align: center;
 }
@@ -182,6 +311,16 @@ body {
   line-height: 22px;
 }
 
+.container-pagnation {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.index-row {
+  display: flex;
+  flex-direction: row;
+  padding: 0 40;
+}
 .blog-title {
   font-family: "Inter";
   font-style: normal;
@@ -227,6 +366,17 @@ body {
   border-radius: 26px;
 }
 
+
+
+.delivery {
+  width: 1170px;
+  background-image: url(/img/Доставка.svg);
+  display: flex;
+
+}
+
+
+
 .delivery-title {
   font-family: "Inter";
   font-style: normal;
@@ -235,6 +385,8 @@ body {
   font-size: 32px;
   line-height: 46px;
 }
+
+
 
 .delivery-text {
   font-family: "Inter";
@@ -254,6 +406,11 @@ body {
   line-height: 20px;
 }
 
+.catalog-container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
 .footer-contacts p {
   font-family: "Inter";
   font-style: normal;
@@ -270,6 +427,26 @@ body {
   color: #2D3440;
   font-size: 20px;
   line-height: 24px;
+}
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.footer-contacts {
+  width: 1170px;
+  margin: 0 auto;
+  background-image: url(/img/Обратная\ связь.svg);
+}
+
+.social-container {
+  width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .footer-contacts-address-phone {
@@ -323,10 +500,11 @@ body {
   line-height: 46px;
 }
 
-.container-asortiment {
-  background-color: #FCFCFC;
-}
+
+
+
 .button-action {
+  margin-left: 585px;
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
