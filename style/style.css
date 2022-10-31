@@ -35,6 +35,17 @@ body {
   background-color: #FEAFC3;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .header {
   color: #ffffff;
   background-color: #FEAFC3;
@@ -44,12 +55,26 @@ body {
   display: flex;
   width: 1170px;
   margin: 0 auto;
+
 }
 
 .navigation-list {
   width: 685px;
   margin: 0;
   padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.header-contacts-address-phone {
+  display: block;
+  list-style-type: none;
+  text-decoration: none;
+  color: #2D3440;
+  padding-top: 8px;
 }
 
 .navigation-user {
@@ -58,6 +83,8 @@ body {
 }
 
 .navigation-link {
+  padding: 8px 16px;
+  display: block;
   font-family: "Inter";
   font-style: normal;
   line-height: 16px;
@@ -69,14 +96,22 @@ body {
   text-transform: capitalize;
 }
 
+.navigation-user .navigation-link {
+  min-width: ;
+  min-height: 32px;
+}
+
 .navigation-item {
-  list-style-type: none;
-  text-decoration: none;
+
 }
 
 .main {
   color: #2D3440;
   background-color: #FEAFC3;
+}
+
+.container-sleder {
+  display: flex;
 }
 
 .main-container {
@@ -205,16 +240,23 @@ body {
   text-align: center;
 
 }
+
+.stroke {
+  width: 1170px;
+  background-image: url(/img/Сео.svg);
+  background-repeat: no-repeat;
+}
 .advantages {
   width: 1142px;
   margin: 0 auto;
+  background-color: #FFFFFF;
 }
 
 .advantages-container {
   width: 1043px;
+  margin: 0 auto;
 }
 .advantages-item {
-  text-align: left;
   list-style-type: none;
   text-decoration: none;
 
@@ -227,22 +269,62 @@ body {
 
 .blog {
   width: 570px;
+  border-radius: 16px;
+  margin-right: 30px;
   background-image: url(/img/Новости-2.jpg);
+  background-repeat: no-repeat;
+}
+
+.blog-title {
+  border-radius: 16px;
+  padding-bottom: 12px;
+  margin-left: 32px;
+}
+
+.blog-link {
+  border-radius: 16px;
+  width: 303px;
+  display: block;
+  margin-left: 32px;
+  padding-bottom: 67px;
 }
 .index-columns {
   display: flex;
   flex-direction: column;
-  padding: 0 40;
+  margin-bottom: 80px;
+}
+
+.container-subscription {
+  width: 570px;
+  background-image: url(/img/Подписка.svg);
+}
+
+.subscription {
+  width: 558px;
+  margin-left: 8px;
+  border-radius: 16px;
+  background-color: #FFFFFF;
+}
+
+.delivery-form-email {
+  width: 506px;
+  display: block;
+  background-color:
+
 }
 
 .big-stock {
   width: 1170px;
   margin: 0 auto;
   display: flex;
+
 }
 
 .stock-malinka {
   width: 570px;
+  padding-top: 36px;
+  padding-left: 36px;
+  padding-bottom: 36px;
   border-radius: 16px;
   background-color:#FF7799;
   background-image: url(/img/малина\ в\ рожке.svg);
@@ -252,6 +334,9 @@ body {
 
 .stock-mar {
   width: 570px;
+  padding-top: 36px;
+  padding-left: 36px;
+  padding-bottom: 36px;
   border-radius: 16px;
   margin-left: 30px;
   background-color:#FF7799;
@@ -302,6 +387,7 @@ body {
   text-align: center;
 }
 
+
 .advantages-description {
   font-family: "Inter";
   font-style: normal;
@@ -319,7 +405,7 @@ body {
 .index-row {
   display: flex;
   flex-direction: row;
-  padding: 0 40;
+  margin-bottom: 80px;
 }
 .blog-title {
   font-family: "Inter";
@@ -370,12 +456,23 @@ body {
 
 .delivery {
   width: 1170px;
+  border-radius: 16px;
   background-image: url(/img/Доставка.svg);
   display: flex;
 
 }
 
+.delivery-container {
+  margin-left: 100px;
+  margin-top: 167px;
+}
 
+.delivery-container-form {
+  min-width: 500px;
+  background-color: #FCFCFC;
+  border-radius: 8px;
+
+}
 
 .delivery-title {
   font-family: "Inter";
@@ -384,6 +481,8 @@ body {
   color: #2D3440;
   font-size: 32px;
   line-height: 46px;
+  margin: 0;
+  padding: 0;
 }
 
 
@@ -428,6 +527,7 @@ body {
   font-size: 20px;
   line-height: 24px;
 }
+
 .footer-container {
   display: flex;
   flex-direction: column;
@@ -435,10 +535,20 @@ body {
   margin: 0 auto;
 }
 
+.footer-social-container {}
+
 .footer-contacts {
   width: 1170px;
+  border-radius: 16px;
   margin: 0 auto;
   background-image: url(/img/Обратная\ связь.svg);
+}
+
+.container-contacts {
+  width: 343px;
+  border-radius: ;
+  background-color: #FCFCFC;
+
 }
 
 .social-container {
@@ -447,6 +557,11 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.footer-navigation-list {
+  list-style-type: none;
+  text-decoration: none;
 }
 
 .footer-contacts-address-phone {
