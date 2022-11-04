@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="/style/reset.css">
   </head>
   <body>
     <header class="header">
@@ -40,7 +41,9 @@
             </a>
           </li>
           <li class="navigation-item">
+            <span class="navigation-link">
             <a class="visually-hidden" href="#">Корзина</a>
+            </span>
           </li>
         </ul>
       </nav>
@@ -114,54 +117,54 @@
               <section class="stock-malinka">
                 <h3 class="stock-title">Малинка даром!</h3>
                 <p class="stock-description">При покупке 2 кг любого фруктового<br> мороженого добавим в ваш заказ банку<br> малинового варенья бесплатно.</p>
-                <a class="promo-bth" href="#">Забрать подарок</a>
+                <a class="promo-bth" href="#">Хочу подарок</a>
               </section>
               <section class="stock-mar">
                 <h3 class="stock-title">Маршмеллоу даром!</h3>
                 <p class="stock-description">При покупке 2 кг пломбира добавим<br> в ваш заказ упаковку нежных<br> зефирок совершенно бесплатно.</p>
-                <a class="promo-bth" href="#">Забрать подарок</a>
+                <a class="promo-bth" href="#">Хочу подарок</a>
               </section>
             </article>
 
           </div>
 
           <div class="index-columns">
-          <h2 class="assortiment-title">Попробуйте самые популярные вкусы нашего мороженого</h2>
+          <h2 class="stock-text">Попробуйте самые популярные<br> вкусы нашего мороженого</h2>
           <section class="assortiment">
             <div class="all">
             <div class="container-asortiment">
             <ul class="assortiment-list">
               <li class="assortiment-item">
-                <img class="assortiment-product" src="img/малина.svg" alt="Малинка">
-                <h4 class="assortiment-name">Малинка</span>
-                <p>Сливочное мороженое<br> с малиновым джемом</p>
-                <b class="assortiment-price">310 ₽/кг</b>
+                <img class="assortiment-product" src="img/малина.svg" width="168" height="168" alt="Малинка">
+                <h4 class="assortiment-name">Малинка</h4>
+                <p class="assortiment-description">Сливочное мороженое<br> с малиновым джемом</p>
+                <p class="assortiment-price">310 ₽/кг</p>
               </li>
               </div>
               <div class="container-asortiment">
               <li class="assortiment-item">
-                <img class="assortiment-product" src="img/фисташка.svg" alt="Фисташка">
-                <h3 class="assortiment-name">Фисташка</span>
-                <p>Фисташковый пломбир<br> с кусочками шоколада</p>
-                <b class="assortiment-price">340 ₽/кг</b>
+                <img class="assortiment-product" src="img/фисташка.svg" width="168" height="168" alt="Фисташка">
+                <h4 class="assortiment-name">Фисташка</h4>
+                <p class="assortiment-description">Фисташковый пломбир<br> с кусочками шоколада</p>
+                <p class="assortiment-price">340 ₽/кг</p>
               </li>
               </div>
               <div class="container-asortiment">
               <li class="assortiment-item">
-                <img class="assortiment-product" src="img/черника.svg" alt="Черника">
-                <h4 class="assortiment-name">Черника</span>
-                <p>Крем-брюле<br>
+                <img class="assortiment-product" src="img/черника.svg" width="168" height="168" alt="Черника">
+                <h4 class="assortiment-name">Черника</h4>
+                <p class="assortiment-description">Крем-брюле<br>
                   с черничным джемом</p>
-                <b class="assortiment-price">330 ₽/кг</b>
+                <p class="assortiment-price">330 ₽/кг</p>
               </li>
             </div>
               <div class="container-asortiment">
               <li class="assortiment-item">
-                <img class="assortiment-product" src="img/бабл.svg" alt="Бабл-гам">
-                <h4 class="assortiment-name">Бабл-гам</span>
-                <p>Ванильный пломбир<br>
+                <img class="assortiment-product" src="img/бабл.svg" width="168" height="168" alt="Бабл-гам">
+                <h4 class="assortiment-name">Бабл-гам</h4>
+                <p class="assortiment-description">Ванильный пломбир<br>
                   со сладкой посыпкой</p>
-                <b class="assortiment-price">320 ₽/кг</b>
+                <p class="assortiment-price">320 ₽/кг</p>
               </li>
               </div>
             </ul>
@@ -207,16 +210,18 @@
           </article>
           <div class="container-subscription">
           <section class="subscription">
-            <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
-              <p class="delivery-form-email">Подпишитесь на нашу сладкую рассылку и будьте всегда
+            <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
+              <p class="subscription-form-email">Подпишитесь на нашу сладкую рассылку и будьте всегда
                 в курсе всего самого вкусного, что у нас происходит. Обещаем<br> не спамить и не слать всякой ненужной ерунды. Честно =)</p>
                 <label for="delivery-email">
 
                 </label>
+              <div class="text-button">
                 <input type="text" id="subscription-email" name="subscription-email" placeholder="email@example.com">
               </p>
-              <button class="button" type="submit">Отправить</button>
+              <button class="button-subscription" type="submit">Отправить</button>
             </form>
+          </div>
           </section>
         </div>
         </div>
@@ -226,11 +231,12 @@
             <h2 class="delivery-title">Доставка любимого<br> мороженого на дом</h2>
             <p class="delivery-text">Хочется полакомиться любимым десертом,<br> но нет времени съездить в магазин? Закажите<br> доставку мороженого на дом, и курьер<br> привезёт вам ваш заказ в течение часа!</p>
             </div>
+
             <div class="delivery-container-form">
-          <p>Укажите адрес и дату доставки, и мы свяжемся<br> с вами, чтобы подтвердить заказ.</p>
+          <p class="delivery-text-form">Укажите адрес и дату доставки, и мы свяжемся<br> с вами, чтобы подтвердить заказ.</p>
 
           <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
-            <p class="delivery-form-date">
+            <p class="field-group delivery-form-date">
               <label class="form-label" for="delivery-date">Дата</label>
               <input type="text" id="delivery-date" name="delivery-date" placeholder="01.04.2020">
             </p>
@@ -246,13 +252,16 @@
               </label>
               <input type="text" id="delivery-addres" name="delivery-addres" placeholder="ул. Большая Конюшенная, 19/8">
             </p>
+            <button class="button" type="submit appointment-submit">Отправить</button>
 
-            <button class="button" type="submit">Отправить</button>
           </form>
+
         </div>
-          </section>
       </div>
     </div>
+          </section>
+
+
     </main>
         <footer class="page-footer">
           <div class="footer-container">
@@ -263,7 +272,7 @@
               <h4 class="about-text">наб. реки Карповки, 5 лит П, Санкт-Петербург</h4>
               <p class="contacts-text">Для заказов по телефону:</p>
               <a class="footer-contacts-address-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-              <p class="contacts-text">(с 10 до 20 ежедневно)</p>
+              <p class="contacts-texts">(с 10 до 20 ежедневно)</p>
               <button class="button" type="submit">Форма обратной связи</button>
             </address>
           </div>
