@@ -2,7 +2,7 @@
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url("/fonts/inter-400.woff2") format("woff2");
+  src: url("../fonts/inter-400.woff2") format("woff2");
   font-display: swap;
   }
 
@@ -10,7 +10,7 @@
    font-family: "Inter";
     font-style: normal;
     font-weight: 700;
-    src: url("/fonts/inter-700.woff2") format("woff2");
+    src: url("../fonts/inter-700.woff2") format("woff2");
     font-display: swap;
     }
 
@@ -18,7 +18,7 @@
       font-family: "Inter";
        font-style: normal;
        font-weight: 900;
-       src: url("/fonts/inter-900.woff2") format("woff2");
+       src: url("../fonts/inter-900.woff2") format("woff2");
        font-display: swap;
        }
 
@@ -143,6 +143,8 @@ body {
   border-style: solid;
   border-width: 1px;
   margin-left: 16px;
+  background: rgba(252, 252, 252, 0.3);
+  border-radius: 30px;
 }
 
 .navigation-login {
@@ -186,18 +188,21 @@ body {
   border-style: solid;
   border-width: 1px;
   margin-left: 16px;
+  background: rgba(252, 252, 252, 0.3);
+  border-radius: 30px;
 }
 
 .navigation-bas {
   width: 100%;
   height: 100%;
-  padding: ;
+  padding: 6px 16px;
   display: flex;
   box-sizing: border-box;
 }
 
 .basked {
-  margin-top: 8px;
+
+  margin-top: 2px;
   margin-left: 7.42px;
   text-decoration: none;
   font-family: "Inter";
@@ -213,6 +218,8 @@ body {
 
 .navigation-search {
   position: relative;
+  background: rgba(252, 252, 252, 0.3);
+  border-radius: 50%;
   border-color: #ffffff;
   border-style: solid;
   border-width: 1px;
@@ -315,8 +322,122 @@ body {
 .gallery {
   width: 306px;
 }
+.slider-img {
+  display: block;
+}
+.slider-wrapper {
+  position: relative;
+}
 
+.slider-controls {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+}
 
+.slider-show {
+  display: flex;
+}
+
+.big-circle {
+  width: 312px;
+  height: 312px;
+  background-color: #FFCBD8;
+  border-radius: 50%;
+}
+
+.small-circle {
+  width: 100px;
+  height: 100px;
+  background-color: #FFCBD8;
+  border-radius: 50%;
+}
+
+.slider-yellow {
+
+  margin-left: 54px;
+  margin-top: 204px;
+  margin-right: 75px;
+}
+
+.slider-pink {
+
+  margin-top: 204px;
+}
+.slider-button {
+  width: 38px;
+  height: 38px;
+  background-color: #FEAFC3;
+  border: none;
+  cursor: pointer;
+  background-image: url(/img/стрелка-слайдер.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.slider-button:hover {
+  background-image: url(/img/Hover-слайдер.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 36px;
+}
+
+.slider-button:focus {
+  background-image: url(/img/Focus-слайдер.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 36px;
+}
+
+.slider-button:disabled {
+  background-image: url(/img/Disabled-слайдер.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 36px;
+}
+
+.slider-prev {
+  transform: rotate(180deg);
+}
+
+.slider-pagination {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+}
+
+.slider-pagination-item {
+  margin: 0 8px;
+}
+
+.slider-pagination-button {
+  width: 12px;
+  height: 12px;
+  margin: 0;
+  padding: 0;
+  background: rgba(252, 252, 252, 0.3);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+
+}
+
+.slider-pagination-button:hover {
+  background-color:rgba(252, 252, 252, 0.3);
+  border: #FCFCFC solid 1px;
+}
+
+.slider-pagination-button:focus {
+  background-color:rgba(252, 252, 252, 0.3);
+  border: #2D3440 solid 1px;
+}
 
 .promo {
   font-family: "Inter";
@@ -373,6 +494,7 @@ body {
   font-size: 32px;
   line-height: 46px;
   text-align: center;
+  margin-top: 106px;
 }
 
 .stock-title {
@@ -405,6 +527,10 @@ body {
 }
 .box-basked {
   display: flex;
+}
+
+.icon-basked:hover {
+  background-color: #FCFCFC;
 }
 .assortiment-price {
   padding-bottom: 28px;
@@ -1067,7 +1193,8 @@ body {
 
 
 .button-action {
-  margin-left: 585px;
+  margin-left: 16px;
+  margin-bottom: 97px;
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
